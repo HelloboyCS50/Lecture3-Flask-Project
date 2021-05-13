@@ -1,0 +1,57 @@
+
+{% extends "layout.html" %}
+
+{% block title %}
+
+	School
+
+{% endblock %}
+
+
+
+{% block body %}
+
+
+	<h3 class="text-center mt-5">School List</h3>
+	<form action="{{url_for ('addmission') }}" method="post">
+		<div class="from-group mt-3">
+			<select class="form-control" name="student_id">
+
+				{% for list in school %}
+					<option value="{{list.id}}">{{list.name}} Location : {{list.location}}</option>
+				{% endfor %}
+
+			</select>
+		</div>
+		<div class="from-group mt-3">
+			<input class="form-control" type="" name="name" placeholder="Enter your Name">
+		</div>
+		<div class="from-group mt-3">
+			<button class="btn btn-primary">Addmisson</button>
+		</div>
+	</form>
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

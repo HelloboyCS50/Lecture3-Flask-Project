@@ -1,0 +1,127 @@
+
+/*--Carousel--*/
+
+.container{
+	margin-bottom: 100px;
+}
+
+.slide-bg{
+	background-color: #fceae8;
+	border-radius: 10px;
+}
+
+.carousel-item {
+	padding: 20px 40px;
+}
+.price{
+	color: #F3327A;
+}
+.buy-btn{
+	background-color: #F3327A;
+	color: #fff;
+	padding: 8px;
+	border-radius: 9px;
+	text-decoration: none;
+	cursor: pointer;
+}
+.buy-btn:hover{
+	text-decoration: none;
+	background-color: #A70E1C;
+}
+
+/*--Carousel End--*/
+
+/*--categories"--*/
+
+.watch{
+	background-color: orange;
+}
+.bag{
+	background-color: #F1357C;
+}
+.shoes{
+	background-color: blue;
+}
+.watch,.bag,.shoes{
+	padding: 10px 30px;
+	border-radius: 15px;
+}
+.categories h2{
+	color: #fff;
+}
+.categories img{
+	width: 100px;
+}
+
+/*---Shoes--*/
+
+.card{
+	box-shadow: 5px 5px 10px #ddd;
+}
+.moveFromLeft {
+	animation-name: moveFromLeft;
+	 animation-duration: 2s;
+}
+@keyframes moveFromLeft{
+	0%{
+		transform: translateX(-100px);
+		opacity: 0;
+	}
+	100%{
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}
+.moveFromRight {
+	animation-name: moveFromRight;
+	 animation-duration: 2s;
+}
+@keyframes moveFromRight{
+	0%{
+		transform: translateX(100px);
+		opacity: 0;
+	}
+	100%{
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}
+.moveFromBottom {
+	animation-name: moveFromBottom;
+	 animation-duration: 2s;
+}
+@keyframes moveFromBottom{
+	0%{
+		transform: translateY(100px);
+		opacity: 0;
+	}
+	100%{
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+
+/*---Shoes End--*/
+
+/*--backpack--*/
+
+.card-footer h5{
+	font-size: 18px;
+}
+
+/*--backpack End--*/
+
+/*--subscribe--*/
+.subscribe-bg{
+	background-color: #fceae8;
+	border-radius: 15px;
+	padding: 0 20px;
+}
+#subscribe{
+	height: 400px;
+}
+
+/*@media (max-width: 590px) {
+  #subscribe {
+    min-height: 600px; } }*/
+/*--subscribe End--*/

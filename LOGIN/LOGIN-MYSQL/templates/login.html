@@ -1,0 +1,44 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+
+	Login
+
+{% endblock %}
+
+{% block body %}
+
+	<section class="bg-danger">
+		<nav class="navbar">
+			<a class="navbar-brand text-light" href="">Expense App</a>
+		</nav>
+
+		<div class="container">
+			<div class="row">
+				<!-- Left side -->
+
+				<div class="col-md-8">
+					<h1 class="text-light display-4 mt-100">Bring the power of Alanlytics to Your Smart Phone</h1>
+				</div>
+
+				<!-- Left side end -->
+				<div class="col-md-4">
+					<div class="card mt-100">
+						<div class="card-body">
+							<form class="form" action="login_validation" method="POST">
+								<label class="lead">Email</label><br>
+								<input type="email" class="form-control" name="email"><br>
+								<label class="lead">Password</label><br>
+								<input type="password" class="form-control" name="password"><br>
+								<input type="submit" class="btn btn-primary btn-lg btn-block" value="Login" name="">
+							</form>
+							<p class="mt-3">Not a Member ? <a href="/register">Create account</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+{% endblock %}

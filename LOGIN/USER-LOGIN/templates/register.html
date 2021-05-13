@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+
+	Register
+
+{% endblock %}
+
+{% block body %}
+
+	<div class="container">
+		<h3 class="lead mt-5 text-center display-4">Registation</h3>
+
+		<div class="row mt-4">
+			<div class="col">
+				<form class="form" action="/add_user" method="POST">
+					<div class="card">
+						<div class="card-body">
+							<label>Name</label><br>
+							<input class="form-control" type="name" name="name"><br>
+							<label>Email</label><br>
+							<input class="form-control" type="email" name="email"><br>
+							<label>Password</label><br>
+							<input class="form-control" type="password" name="password"><br>
+							<button class="btn btn-primary">Register</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}

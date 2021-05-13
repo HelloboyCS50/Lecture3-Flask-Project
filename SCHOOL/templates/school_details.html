@@ -1,0 +1,50 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+
+	School details
+
+{% endblock %}
+
+
+{% block body %}
+
+	<h2>School Details</h2>
+
+	<ul>
+		<li> Name : {{ list.name }}</li>
+		<li> Location : {{ list.location }}</li>
+		<li> Student : {{ list.student }}</li>
+	</ul>
+
+	<h3>Student Name </h3>
+
+	{% for student in student_data %}
+
+	<li>{{student.student_name}}</li>
+
+	{% else %}
+
+		<h1>No Student</h1>
+	{% endfor %}
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

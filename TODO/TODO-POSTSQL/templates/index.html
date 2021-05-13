@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="shortcut icon" type="image/x-icon" href="images/">	
+		<link rel="stylesheet" type="text/css" href="{{url_for ('static', filename = 'bootstrap.min.css')}}">
+		<title>TODO PRACTICE</title>
+	</head>
+	<body>
+
+		<!-- Start Navbar -->
+
+		<div class="container mt-5">
+			<nav class="navbar navbar-expand-lg bg-light navbar-light">
+				<!-- <a class="navbar-brand" href="">TODO</a> -->
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#first">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="first">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+						</li>
+					</ul>
+				</div>		
+			</nav> 			
+		</div>
+
+		<!-- Navbar End -->
+
+		<!-- Alert -->
+
+		<div class="container mt-4">
+			<div class="alert alert-warning alert-dismissible fade show" role="alert">
+				<strong>Warning!</strong> You should check in on some of those fields below.
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+		</div>
+
+
+		<!-- Add Task -->
+
+		<div class="container mt-4">
+			<form action="/submit_form" method="POST">
+				<div class="row justify-content-center">
+					<div class="col-md-8">
+						<input class="form-control" type="text" name="task" placeholder="Add Your Task">
+					</div>
+					<div class="col-md-2">
+						<input class="btn btn-success" type="submit" value="Add Task">
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<!-- End Add Task -->
+
+
+		<!-- TODO List -->
+
+		<div class="container mt-4">
+			<div class="card">
+				<div class="card-header">
+					<h2 class="lead text-center">Your TODO List</h2>
+				</div>
+				<div class="card-body">
+					<table class="table table-bordered table-hover">
+						<tr>
+							<th width="10%" class="text-center">SL</th>
+							<th>TODO Title</th>
+							<th width="20%" class="text-center">Action</th>
+						</tr>
+						<tr>
+							<td width="10%" class="text-center">1</td>
+							<td>Learnig Web Development</td>
+							<td width="20%" class="text-center">
+								<input type="submit" value="Edit" class="btn btn-primary" name="">
+								<input type="submit" value="Delete" class="btn btn-danger" name="">
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- JS File -->
+
+		<script src="{{url_for('static' , filename = 'jquery-3.4.1.min.js')}}"></script>
+		<script src="{{url_for('static' , filename = 'popper.min.js')}}"></script>
+		<script src="{{url_for('static' , filename = 'bootstrap.min.js')}}"></script>
+
+
+		<!-- Main JS -->
+
+
+	</body>
+</html>
